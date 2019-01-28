@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="secondAnchorPane" maxHeight="335.0" maxWidth="480.0" minHeight="335.0" minWidth="480.0" prefHeight="335.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="krzaczek_rsa_password_manager.Layout2Controller">
+    <children>
+      <HBox layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <VBox prefHeight="280.0" prefWidth="257.0">
+               <children>
+                  <Label fx:id="searchLabel" prefHeight="20.0" prefWidth="214.0" text="Search resource">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="searchTextfield" prefHeight="25.0" prefWidth="214.0" promptText="Name of  searched resource">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin></TextField>
+                  <ListView fx:id="resourcesList" prefHeight="265.0" prefWidth="257.0" />
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="280.0" prefWidth="12.0" />
+            <VBox prefHeight="280.0" prefWidth="192.0">
+               <children>
+                  <HBox prefHeight="57.0" prefWidth="192.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#addRecordButtonAction" prefHeight="25.0" prefWidth="94.0" text="Add new entry">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" right="2.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#newKeyButtonAction" prefHeight="25.0" prefWidth="94.0" text="Make new key">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" right="2.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#helpButtonAction" prefHeight="25.0" prefWidth="94.0" text="Help">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#removeRecordButtonAction" prefHeight="25.0" prefWidth="94.0" text="Remove entry">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="2.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#saveChangesButtonAction" prefHeight="25.0" prefWidth="94.0" text="Save changes">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="2.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="25.0" prefWidth="94.0" text="Exit">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="2.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label text="Resource name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="resourceTextfield" promptText="none" />
+                  <Label text="E-mail">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="emailTextfield" promptText="none" />
+                  <Label text="Nickname">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nicknameTextfield" promptText="none" />
+                  <Label text="Login">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="loginTextfield" fx:id="loginTextfield" promptText="none" />
+                  <Label id="passwordLabel" text="Password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="passwordTextfield" promptText="none" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="firstAnchorPane" maxHeight="335.0" maxWidth="480.0" minHeight="335.0" minWidth="480.0" prefHeight="335.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="krzaczek_rsa_password_manager.Layout1Controller">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Pane prefHeight="93.0" prefWidth="450.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="74.0" prefWidth="450.0" text="RSA Password Manager">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="195.0" layoutY="48.0" text="by Tomasz 'Krzaczek' Drewek">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="16.0" />
+               </VBox.margin>
+            </Separator>
+            <Label alignment="CENTER" prefHeight="81.0" prefWidth="450.0" text="Choose proper files to manage your passwords">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Label text="Select private key file">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="460.0">
+               <children>
+                  <TextField fx:id="privateTextfield" prefHeight="25.0" prefWidth="381.0" />
+                  <Button mnemonicParsing="false" onAction="#privateButtonAction" prefHeight="25.0" prefWidth="85.0" text="Choose file">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Label text="Select data file localization">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="38.0" prefWidth="460.0">
+               <children>
+                  <TextField fx:id="dataTextfield" prefHeight="25.0" prefWidth="381.0" />
+                  <Button mnemonicParsing="false" onAction="#dataButtonAction" prefHeight="25.0" prefWidth="85.0" text="Choose file">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="77.0" prefWidth="450.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#loadButtonAction" prefHeight="39.0" prefWidth="110.0" text="Load data">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#generateButtonAction" prefHeight="39.0" prefWidth="180.0" text="Generate new files">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#helpButtonAction" prefHeight="39.0" prefWidth="70.0" text="Help">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="39.0" prefWidth="70.0" text="Exit">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
